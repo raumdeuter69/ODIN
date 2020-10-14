@@ -61,7 +61,8 @@ function game()
         let computerPoints = 0;
         let playerTurn = '';
         let computerTurn = '';
-        for(i=0;i<=4;i++){
+        let notimes=prompt("How many rounds do you want to play");
+        for(i=0;i<notimes;i++){
         	computerTurn=computerPlay();
         	playerTurn=playerSelection();
         	roundResult=playRound(playerTurn,computerTurn);
